@@ -264,14 +264,14 @@ a:hover { text-decoration: underline; }
    PROJECT CARDS
 =========================== */
 .project-video {
-  width: 100%;
+  width: 80%;
+  margin: 0 auto 1.5rem auto;
   border-radius: 8px;
   overflow: hidden;
-  margin-bottom: 1.5rem;
   background: #000;
   border: 1px solid var(--border);
   position: relative;
-  padding-top: 56.25%;
+  padding-top: 45%;
 }
 .project-video iframe {
   position: absolute;
