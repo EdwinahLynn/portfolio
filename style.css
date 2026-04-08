@@ -270,11 +270,16 @@ a:hover { text-decoration: underline; }
   margin-bottom: 1.5rem;
   background: #000;
   border: 1px solid var(--border);
+  position: relative;
+  padding-top: 56.25%;
 }
-.project-video video {
+.project-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-height: 360px;
-  display: block;
+  height: 100%;
+  border: none;
   border-radius: 8px;
 }
 .project-card {
@@ -354,27 +359,27 @@ a:hover { text-decoration: underline; }
 }
 
 /* ===========================
-   LEARNING OUTCOMES
+   SOFT SKILLS
 =========================== */
-.outcomes-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
+.soft-skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
 }
-.outcome-card {
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 1.75rem;
-  transition: border-color 0.2s, transform 0.2s;
+.soft-skill-chip {
+  background: rgba(188,140,255,0.1);
+  border: 1px solid rgba(188,140,255,0.3);
+  color: var(--accent2);
+  padding: 0.5rem 1.2rem;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.2s, transform 0.2s;
 }
-.outcome-card:hover {
-  border-color: var(--accent2);
-  transform: translateY(-3px);
+.soft-skill-chip:hover {
+  background: rgba(188,140,255,0.2);
+  transform: translateY(-2px);
 }
-.outcome-icon { font-size: 2rem; display: block; margin-bottom: 0.75rem; }
-.outcome-card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.4rem; }
-.outcome-card p { color: var(--muted); font-size: 0.88rem; }
 
 /* ===========================
    CONTACT
